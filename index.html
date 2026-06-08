@@ -3,37 +3,74 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AI Conveyor Test</title>
-    <style>
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        font-family: Arial, sans-serif;
-        color: #1f2937;
-        background: #f8fafc;
-      }
-
-      main {
-        text-align: center;
-      }
-
-      button {
-        padding: 0.75rem 1.25rem;
-        border: 0;
-        border-radius: 6px;
-        color: #ffffff;
-        background: #2563eb;
-        font: inherit;
-        cursor: pointer;
-      }
-    </style>
+    <title>AI Conveyor Landing Page</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <main>
-      <h1>AI Conveyor Test</h1>
-      <button type="button">Contact</button>
+      <section class="hero">
+        <p class="eyebrow">AI Conveyor workflow</p>
+        <h1>AI Conveyor turns requests into reviewed code changes</h1>
+        <p class="hero-copy">
+          A lightweight path from a submitted task to a GitHub Issue, Codex
+          implementation, Pull Request, and final merge.
+        </p>
+      </section>
+
+      <section class="workflow" aria-labelledby="workflow-title">
+        <h2 id="workflow-title">Workflow</h2>
+        <ol class="workflow-map">
+          <li>Form Submission</li>
+          <li>GitHub Issue</li>
+          <li>Codex CLI</li>
+          <li>Pull Request</li>
+          <li>Merge</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="how-title">
+        <h2 id="how-title">How it works</h2>
+        <div class="steps">
+          <article>
+            <span class="step-icon">F</span>
+            <h3>1. Submit the form</h3>
+            <p>The operator describes the change request in a small form.</p>
+          </article>
+          <article>
+            <span class="step-icon">I</span>
+            <h3>2. Create an issue</h3>
+            <p>The request becomes a structured GitHub Issue with acceptance criteria.</p>
+          </article>
+          <article>
+            <span class="step-icon">C</span>
+            <h3>3. Let Codex implement</h3>
+            <p>Codex reads the issue, edits the repository, and prepares a branch.</p>
+          </article>
+          <article>
+            <span class="step-icon">P</span>
+            <h3>4. Review the PR</h3>
+            <p>The finished branch is opened as a Pull Request for review and merge.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="wins-title">
+        <h2 id="wins-title">Current wins</h2>
+        <ul class="check-list">
+          <li>Automatic issue creation</li>
+          <li>PR generation through Codex</li>
+          <li>Merge without human handoff</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="next-title">
+        <h2 id="next-title">Next steps</h2>
+        <ul class="check-list next-list">
+          <li>Expand supported task types</li>
+          <li>Add automated tests</li>
+          <li>Integrate with other platforms</li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
