@@ -1,0 +1,32 @@
+name: Protected Files Check
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  protected-files-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check changed files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          changed_files="$(git diff --name-only "${{ github.event.pull_request.base.sha }}" "${{ github.event.pull_request.head.sha }}")"
+          protected_pattern='^(database\.js|\.env|config/|config/secrets(/|$))'
+
+          if printf '%s\n' "$changed_files" | grep -E "$protected_pattern" >/dev/null; then
+            echo "Protected file changed. Manual review required."
+            printf '%s\n' "$changed_files" | grep -E "$protected_pattern"
+            exit 1
+          fi
+
+          echo "Protected files check passed."
