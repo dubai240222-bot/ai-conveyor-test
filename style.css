@@ -82,6 +82,30 @@ li {
   font-size: 1.18rem;
 }
 
+.version-banner {
+  width: min(100%, 760px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-top: 28px;
+  padding: 18px 20px;
+  border: 2px solid #b45309;
+  border-radius: 8px;
+  color: #2b1700;
+  background: #fbbf24;
+  box-shadow: 0 14px 30px rgba(180, 83, 9, 0.22);
+  font-weight: 800;
+}
+
+.version-banner span:last-child {
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: #ffffff;
+  background: #9a3412;
+  font-size: 0.9rem;
+}
+
 .workflow-map {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
