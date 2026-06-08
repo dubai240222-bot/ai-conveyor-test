@@ -161,6 +161,14 @@ article {
   border-left-color: #f59e0b;
 }
 
+.review-list {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.review-list li {
+  border-left-color: #2563eb;
+}
+
 @media (max-width: 760px) {
   main {
     width: min(100% - 24px, 1120px);
