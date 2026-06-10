@@ -61,6 +61,24 @@ the current status here.
 - Do not change protected files or secret paths without explicit owner approval.
 - Keep `ROLLBACK_PLAN.md` and `.github/workflows/protected-files-check.yml` intact unless the owner explicitly asks to change them.
 
+## Owner / Engineer Working Style
+
+- The owner is not a programmer and must not be treated as a GitHub, Codex, or n8n operator.
+- The owner is the chief customer and result approver.
+- The owner's role is to decide, click the requested button, send Issue/PR numbers or screenshots, and visually check the live result.
+- The engineer's role is to guide the owner step by step.
+- Future engineers must write short operational instructions:
+  - what to open
+  - where to click
+  - what text to paste
+  - what green signal to check
+  - when merge is safe
+  - when merge is not safe
+  - what to send back for review
+- Do not give vague instructions like "create an Issue", "check the PR", or "run Codex".
+- Always provide ready-to-paste n8n fields, ready-to-paste Codex commands, and exact PR checks.
+- Keep explanations short and act as an engineer-guide for a non-programmer owner.
+
 ## Next Safe Step
 
 - Continue product work or improve the eSIM-first homepage only after confirming latest status.
