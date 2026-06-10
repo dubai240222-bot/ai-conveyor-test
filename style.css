@@ -32,9 +32,20 @@ section:last-child {
 }
 
 .hero {
-  min-height: 64vh;
   display: grid;
-  align-content: center;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  gap: 32px;
+  align-items: center;
+  min-height: calc(100vh - 96px);
+  margin-bottom: 20px;
+  padding: 40px 34px;
+  border: 1px solid #fed7aa;
+  border-radius: 8px;
+  color: #1f2937;
+  background:
+    radial-gradient(circle at 92% 14%, rgba(251, 191, 36, 0.34), transparent 12rem),
+    linear-gradient(135deg, #fff7ed, #ecfeff);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
 }
 
 .eyebrow {
@@ -106,26 +117,23 @@ li {
   font-size: 0.9rem;
 }
 
-.esim-promo {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
-  gap: 28px;
-  align-items: center;
-  margin: 12px 0 20px;
-  padding: 34px;
-  border: 1px solid #fed7aa;
+.factory-intro {
+  padding: 30px;
+  border: 1px solid #dbe4ef;
   border-radius: 8px;
-  color: #1f2937;
-  background:
-    radial-gradient(circle at 92% 14%, rgba(251, 191, 36, 0.32), transparent 12rem),
-    linear-gradient(135deg, #fff7ed, #ecfeff);
-  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+  background: rgba(255, 255, 255, 0.72);
 }
 
-.esim-copy h2 {
+.factory-intro h2 {
+  max-width: 760px;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.esim-copy h1 {
   max-width: 640px;
   margin-bottom: 16px;
-  font-size: 3.25rem;
+  font-size: 4.25rem;
   line-height: 1.04;
 }
 
@@ -373,8 +381,9 @@ article {
   }
 
   .hero {
+    grid-template-columns: 1fr;
     min-height: auto;
-    padding-top: 40px;
+    padding: 28px 22px;
   }
 
   h1 {
@@ -385,12 +394,7 @@ article {
     font-size: 1.5rem;
   }
 
-  .esim-promo {
-    grid-template-columns: 1fr;
-    padding: 22px;
-  }
-
-  .esim-copy h2 {
+  .esim-copy h1 {
     font-size: 2.15rem;
   }
 
