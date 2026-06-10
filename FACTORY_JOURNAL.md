@@ -31,3 +31,10 @@
 - Existing AI Conveyor content remained visible.
 - GitHub Pages updated successfully after merge.
 - Mini factory v0.1 can be considered opened for simple static website tasks.
+
+## 2026-06-10
+
+- Strict operating manual needed after second-shift test.
+- Problem: future engineers may interpret factory direction differently.
+- Decision: create FACTORY_OPERATING_MANUAL.md as mandatory first-read document.
+- Next target: standardize shift handover before further product work.
