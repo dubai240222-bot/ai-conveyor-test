@@ -22,3 +22,12 @@
 - Issue #27 was closed because it was only a test.
 - Issue #28 created for Issue-to-Codex handoff checklist.
 - Next target: standardize manual Codex start procedure.
+
+## 2026-06-10
+
+- PR #31 was merged.
+- First product test was released on GitHub Pages.
+- The homepage now includes a modern STC 5G eSIM promo section.
+- Existing AI Conveyor content remained visible.
+- GitHub Pages updated successfully after merge.
+- Mini factory v0.1 can be considered opened for simple static website tasks.
